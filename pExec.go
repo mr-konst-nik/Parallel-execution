@@ -1,4 +1,4 @@
-package main
+package pExec
 
 import (
 	"fmt"
@@ -35,7 +35,7 @@ func typeC(c chan string) {
 	c <- "Process C finished"
 }
 
-func main() {
+func Exec() {
 
 	funcArr := []func(c chan string){typeA, typeB, typeC}
 
