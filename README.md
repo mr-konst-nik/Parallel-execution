@@ -26,7 +26,7 @@ func typeAWG(wg *sync.WaitGroup) {
 
 // send a list of functions
 funcArr := []func(wg *sync.WaitGroup){typeAWG, typeBWG, typeCWG}
-ExecutionWG(funcArr)
+ExecWG(funcArr)
 ```
 ## Benchmark
 
